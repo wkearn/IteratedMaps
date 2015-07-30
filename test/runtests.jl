@@ -15,11 +15,11 @@ for i in 1:100
 end
 
 # Check the Henon map calculates correctly
-@test collect(take(HenonMap([1.4,0.3],[0.2,0.3]),2)) == {[0.2,0.3],[1.244,0.06]}
+@test collect(take(HenonMap([1.4,0.3],[0.2,0.3]),2)) == Any[[0.2,0.3],[1.244,0.06]]
 
 # Same with the Duffing map
-@test collect(take(DuffingMap([2.75,0.2],[1.0,0.0]),2)) == {[1.0,0.0],[0.0,-0.2]}
+@test collect(take(DuffingMap([2.75,0.2],[1.0,0.0]),2)) == Any[[1.0,0.0],[0.0,-0.2]]
 
 # And the Tent map
 
-@test collect(take(TentMap(2,0.2),2)) = [0.2,0.4]
+@test collect(take(TentMap(2,0.2),2)) == [0.2,0.4]
