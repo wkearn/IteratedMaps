@@ -21,6 +21,7 @@ collect(take(lm(0.5),10)) # Collect the first ten values in an array
 
 - Refine the interface. It might be nice (for dispatch reasons) to have types for each map rather than constructing a generic `IteratedMap` type for each map
 - Come up with a better way to handle multidimensional and non-real maps
+- Needs tests
 
 
 
